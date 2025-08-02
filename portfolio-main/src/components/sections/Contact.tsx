@@ -19,7 +19,7 @@ export default function Contact() {
     })
     const [isSubmitting, setIsSubmitting] = useState(false)
     const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
-    const [showSuccessPopup, setShowSuccessPopup] = useState(false)
+    // const [showSuccessPopup, setShowSuccessPopup] = useState(false)
     const [validationErrors, setValidationErrors] = useState({
         email: '',
         contactNumber: ''
@@ -495,30 +495,7 @@ export default function Contact() {
                 </div>
             </div>
 
-            {/* Success Popup */}
-            <AnimatePresence>
-                {showSuccessPopup && (
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.8, y: 50 }}
-                        animate={{ opacity: 1, scale: 1, y: 0 }}
-                        exit={{ opacity: 0, scale: 0.8, y: 50 }}
-                        transition={{ duration: 0.3 }}
-                        className="fixed bottom-6 right-6 z-50"
-                    >
-                        <div className="bg-green-600 text-white px-6 py-4 rounded-lg shadow-lg flex items-center space-x-3 max-w-sm">
-                            <div className="flex-shrink-0">
-                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                </svg>
-                            </div>
-                            <div>
-                                <p className="font-medium">Message sent successfully!</p>
-                                <p className="text-sm opacity-90">You&apos;ll receive a response shortly.</p>
-                            </div>
-                        </div>
-                    </motion.div>
-                )}
-            </AnimatePresence>
+            {/* Success Popup (removed unused showSuccessPopup state and popup) */}
         </motion.section>
     )
 }

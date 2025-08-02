@@ -1,6 +1,6 @@
 'use client'
 
-import { motion, useAnimation, useInView } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { useRef, useEffect, useState } from 'react'
 import { FiGithub, FiLinkedin, FiMail, FiDownload, FiArrowDown, FiCode, FiZap } from 'react-icons/fi'
 import Image from 'next/image'
@@ -107,8 +107,6 @@ function FloatingElements() {
 
 export default function Hero() {
     const ref = useRef(null)
-    const controls = useAnimation()
-    const isInView = useInView(ref, { once: false })
 
     useEffect(() => {
         // GSAP timeline for hero entrance
