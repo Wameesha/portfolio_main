@@ -15,7 +15,7 @@
     "@types/three": "^0.178.1",
     "@vercel/speed-insights": "^1.2.0",
     "clsx": "^2.1.1",
-    "framer-motion": "^12.23.6",
+    "framer-motion": "^12.23.12",
     "gsap": "^3.13.0",
     "next": "15.4.3",
     "nodemailer": "^7.0.5",
