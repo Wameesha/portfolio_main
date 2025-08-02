@@ -26,7 +26,7 @@ export async function POST(request: NextRequest) {
         // Email content
         const mailOptions = {
             from: process.env.EMAIL_USER,
-            to: process.env.EMAIL_TO || 'wamandinumaneth@gmail.com',
+            to: process.env.EMAIL_TO || 'rasanjani9jayasingha@gmail.com',
             subject: `Portfolio Contact: ${subject}`,
             html: `
                 <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -59,7 +59,7 @@ export async function POST(request: NextRequest) {
         // Send email
         await transporter.sendMail(mailOptions)
 
-        console.log('✅ Email sent successfully to wamandinumaneth@gmail.com')
+        console.log('✅ Email sent successfully to rasanjani9jayasingha@gmail.com')
         console.log(`📧 From: ${firstName} ${lastName} (${email})`)
         console.log(`📱 Phone: ${contactNumber}`)
         console.log(`📄 Subject: ${subject}`)

@@ -16,18 +16,18 @@ const firaCode = Fira_Code({
 });
 
 export const metadata: Metadata = {
-  title: "Mandinu Maneth | Software Engineer & Information Systems Specialist",
-  description: "Professional portfolio showcasing software engineering projects and Information Systems expertise. Building innovative solutions that bridge technology and business needs.",
-  keywords: ["Software Engineer", "Information Systems", "Web Developer", "Portfolio", "React", "Next.js", "Mandinu Maneth"],
-  authors: [{ name: "Mandinu Maneth" }],
-  creator: "Mandinu Maneth",
+  title: "Wameesha Jayasingha | Computer Science Undergraduate & Full Stack Developer",
+  description: "Computer Science undergraduate passionate about full-stack development and creating innovative software solutions that solve real-world problems.",
+  keywords: ["Computer Science", "Full Stack Developer", "Web Developer", "Portfolio", "React", "Next.js", "Wameesha Jayasingha"],
+  authors: [{ name: "Wameesha Jayasingha" }],
+  creator: "Wameesha Jayasingha",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://yourportfolio.com",
-    title: "Mandinu Maneth | Software Engineer & Information Systems Specialist",
-    description: "Professional portfolio showcasing software engineering projects and Information Systems expertise.",
-    siteName: "Mandinu Maneth Portfolio",
+    title: "Wameesha Jayasingha | Computer Science Undergraduate & Full Stack Developer",
+    description: "Computer Science undergraduate passionate about full-stack development and creating innovative software solutions that solve real-world problems.",
+    siteName: "Wameesha Jayasingha Portfolio",
   },
   twitter: {
     card: "summary_large_image",

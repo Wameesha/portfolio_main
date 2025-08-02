@@ -2,7 +2,7 @@
 
 ## ✅ Setup Complete!
 
-Your contact form is now working and sending emails directly to wamandinumaneth@gmail.com using Gmail App Password.
+Your contact form is now working and sending emails directly to rasanjani9jayasingha@gmail.com using Gmail App Password.
 
 ## Current Status:
 
@@ -16,7 +16,7 @@ Your contact form is now working and sending emails directly to wamandinumaneth@
 1. User fills out contact form on your portfolio
 2. Form submits to `/api/contact` endpoint
 3. Server sends email using Nodemailer with Gmail SMTP
-4. Email arrives in wamandinumaneth@gmail.com inbox
+4. Email arrives in rasanjani9jayasingha@gmail.com inbox
 5. User receives success confirmation
 
 ## Architecture:
