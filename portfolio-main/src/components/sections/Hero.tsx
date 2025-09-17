@@ -180,7 +180,7 @@ export default function Hero() {
                         whileHover={{ scale: 1.05, rotateY: 5 }}
                         transition={{ duration: 0.3 }}
                     >
-                        <div className="relative w-40 h-40 sm:w-56 sm:h-56 mx-auto mb-8">
+                        <div className="relative w-32 h-32 sm:w-40 sm:h-40 mx-auto mb-8">
                             <div className="absolute inset-0 rounded-full bg-purple-500 p-1 animate-pulse">
                                 <div className="w-full h-full rounded-full bg-gray-900 p-1">
                                     <Image
