@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
-import { FiGithub, FiExternalLink, FiStar } from 'react-icons/fi'
+import { FiGithub, FiStar } from 'react-icons/fi'
 import Image from 'next/image'
 import { projects, type Project } from '@/data/projects'
 import ProjectModal from '@/components/ui/ProjectModal'
@@ -77,17 +77,7 @@ export default function Projects() {
 
                 {/* Overlay Actions */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="flex space-x-3">
-                        <motion.a
-                            href={project.liveUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.9 }}
-                            className="p-3 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-colors duration-200"
-                        >
-                            <FiExternalLink className="w-5 h-5" />
-                        </motion.a>
+                    <div className="flex">
                         <motion.a
                             href={project.githubUrl}
                             target="_blank"
@@ -134,27 +124,16 @@ export default function Projects() {
                     )}
                 </div>
 
-                {/* Action Buttons */}
-                <div className="flex space-x-2">
+                {/* Action Button */}
+                <div className="flex">
                     <motion.button
                         onClick={() => setSelectedProject(project)}
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
-                        className="flex-1 px-3 py-1.5 text-sm bg-purple-600 hover:bg-purple-700 text-white rounded-md font-medium transition-colors duration-200"
+                        className="w-full px-3 py-1.5 text-sm bg-purple-600 hover:bg-purple-700 text-white rounded-md font-medium transition-colors duration-200"
                     >
                         View Details
                     </motion.button>
-                    <motion.a
-                        href={project.liveUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        whileHover={{ scale: 1.02 }}
-                        whileTap={{ scale: 0.98 }}
-                        className="px-3 py-1.5 text-sm border-2 border-purple-600 text-purple-400 hover:bg-purple-600 hover:text-white rounded-md font-medium transition-colors duration-200 flex items-center space-x-1"
-                    >
-                        <FiExternalLink className="w-3 h-3" />
-                        <span>Live Demo</span>
-                    </motion.a>
                 </div>
             </div>
         </motion.div>

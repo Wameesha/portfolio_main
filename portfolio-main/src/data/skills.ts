@@ -11,7 +11,8 @@ export const skills = {
     { name: "HTML/CSS", level: 90, years: 3 },
   ],
   frontend: [
-    { name: "React", level: 85, years: 2 },
+  { name: "React", level: 85, years: 2 },
+  { name: "Next.js", level: 85, years: 2 },
     { name: "HTML", level: 90, years: 3 },
     { name: "CSS", level: 85, years: 3 },
     { name: "Tailwind CSS", level: 85, years: 2 },
@@ -43,7 +44,8 @@ export const skills = {
     { name: "Problem Solving", level: 85, years: 3 },
   ],
   tools: [
-    { name: "Git", level: 85, years: 2 },
+  { name: "Git", level: 85, years: 2 },
+  { name: "Next.js", level: 85, years: 2 },
     { name: "GitHub", level: 85, years: 2 },
     { name: "Linux", level: 75, years: 2 },
     { name: "VS Code", level: 90, years: 3 },

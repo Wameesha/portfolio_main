@@ -8,13 +8,14 @@ import {
     SiReact, SiNodedotjs, SiExpress, SiSpringboot,
     SiPhp, SiC, SiCplusplus, SiScala, SiPython, SiR,
     SiTailwindcss, SiMysql, SiMongodb, SiGit, SiLinux,
-    SiJavascript, SiHtml5, SiCss3, SiFigma, SiPostman
+    SiJavascript, SiHtml5, SiCss3, SiFigma, SiPostman, SiNextdotjs
 } from 'react-icons/si'
 
 
 // Main technologies to display with centered cloud positioning
 const mainTechnologies = [
     { icon: SiReact, color: '#61DAFB', position: { top: '15%', left: '20%' } },
+    { icon: SiNextdotjs, color: '#fff', position: { top: '18%', left: '35%' } },
     { icon: SiJavascript, color: '#F7DF1E', position: { top: '10%', left: '80%' } },
     { icon: SiNodedotjs, color: '#339933', position: { top: '20%', left: '70%' } },
     { icon: SiExpress, color: '#FFFFFF', position: { top: '35%', left: '15%' } },

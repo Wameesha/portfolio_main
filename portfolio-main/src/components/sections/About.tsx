@@ -182,7 +182,7 @@ export default function About() {
                     className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 text-center"
                 >
                     {[
-                        { number: "3.20", label: "GPA/4.00" },
+                        { number: "3.21", label: "GPA/4.00" },
                         { number: "3+", label: "Major Projects" },
                         { number: "10+", label: "Technologies" },
                         { number: "2026", label: "Graduation" }

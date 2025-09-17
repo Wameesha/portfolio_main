@@ -1,8 +1,6 @@
-'use client'
-
-
+"use client";
 import { motion, AnimatePresence } from 'framer-motion'
-import { FiX, FiGithub, FiExternalLink, FiCalendar, FiUsers, FiCheck } from 'react-icons/fi'
+import { FiX, FiGithub, FiCalendar, FiUsers, FiCheck } from 'react-icons/fi'
 import Image from 'next/image'
 import type { Project } from '@/data/projects'
 
@@ -114,14 +112,14 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                                     {/* Project Stats */}
                                     <div className="flex flex-wrap gap-6 mb-8 text-sm">
                                         <div className="flex items-center space-x-2">
-                                            <FiUsers className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                                        <FiUsers className="w-5 h-5 text-purple-600 dark:text-purple-400" />
                                             <span className="font-medium">Team Size:</span>
                                             <span className="text-gray-600 dark:text-gray-300">
                                                 {project.teamSize === 1 ? 'Solo Project' : `${project.teamSize} people`}
                                             </span>
                                         </div>
                                         <div className="flex items-center space-x-2">
-                                            <FiCalendar className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                                            <FiCalendar className="w-5 h-5 text-purple-600 dark:text-purple-400" />
                                             <span className="font-medium">Duration:</span>
                                             <span className="text-gray-600 dark:text-gray-300">{project.duration}</span>
                                         </div>
@@ -136,17 +134,7 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
 
                                     {/* Action Buttons */}
                                     <div className="flex flex-wrap gap-4 mb-8">
-                                        <motion.a
-                                            href={project.liveUrl}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            whileHover={{ scale: 1.02 }}
-                                            whileTap={{ scale: 0.98 }}
-                                            className="flex items-center space-x-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors duration-200"
-                                        >
-                                            <FiExternalLink className="w-5 h-5" />
-                                            <span>Live Demo</span>
-                                        </motion.a>
+                                        {/* Live Demo button removed as per previous requests */}
                                         <motion.a
                                             href={project.githubUrl}
                                             target="_blank"
@@ -179,7 +167,7 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                                             {project.technologies.map((tech: string) => (
                                                 <span
                                                     key={tech}
-                                                    className="px-4 py-2 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-lg font-medium"
+                                                    className="px-4 py-2 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-lg font-medium"
                                                 >
                                                     {tech}
                                                 </span>
